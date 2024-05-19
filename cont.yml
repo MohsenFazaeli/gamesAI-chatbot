@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bot:
+    image: ibot_v1
+    container_name: cbot_v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./huggingface:/root/.cache/huggingface
+      - ./.storage:/app/.storage
+    networks:
+      - default

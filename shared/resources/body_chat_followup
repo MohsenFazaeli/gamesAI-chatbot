@@ -1,0 +1,90 @@
+<!-- chat open -->
+<div class="chat-bar-open" id="chat-open">
+    <button
+            id="chat-open-button"
+            type="button"
+            class="collapsible close"
+            onclick="chatOpen()"
+>
+        <img src="static/images/Artesh.png" alt="Artesh image"/>
+    </button>
+</div>
+
+<!-- chat close -->
+<div class="chat-bar-close" id="chat-close">
+    <button
+            id="chat-close-button"
+            type="button"
+            class="collapsible close"
+            onclick="chatClose()"
+    >
+        <i class="material-icons-outlined"> close </i>
+    </button>
+</div>
+
+<!-- chat-window 1 -->
+<div class="chat-window" id="chat-window1">
+    <div class="hi-there">
+        <p class="p1">سلام</p>
+        <!-- <br /> -->
+        <p class="p2">به ربات هوشمند فرماندهی و کنترل خوش آمدید</p>
+    </div>
+    <div class="start-conversation">
+        <!-- <h1>شروع مکالمه</h1>
+        <br />
+        <p>The team typically replies in few minutes.</p> -->
+        <button
+                class="new-conversation"
+                type="button"
+                onclick="openConversation()"
+        >
+          <span>شروع مکالمه</span>
+          <i class="material-icons-outlined"> s </i>
+        </button>
+    </div>
+</div>
+
+<div class="chat-window2" id="chat-window2">
+    <div class="message-box" id="messageBox">
+        <div class="hi-there">
+            <p class="p1">سلام</p>
+            <!-- <br /> -->
+            <p class="p2">به ربات هوشمند فرماندهی و کنترل خوش آمدید</p>
+        </div>
+        <!-- <div class="first-chat">
+          <p>Is there any offlines versions available for Maxeon Player?</p>
+          <div class="arrow"></div>
+        </div>
+        <div class="second-chat">
+          <div class="circle"></div>
+          <p>Currently we don't have but we will launch soon.</p>
+          <div class="arrow"></div>
+        </div>
+      </div> -->
+        <div class="input-box">
+            <div class="surveysparrow">
+                <img src="static/images/sparrow favicon.png"/>
+                <p>پردازش متن مرکز فرماندهی و کنترل</p>
+            </div>
+            <div class="write-reply">
+                <input
+                        class="inputText"
+                        type="text"
+                        id="textInput"
+                        placeholder="پیام خود را بنویسید"
+                />
+            </div>
+            <div class="send-button">
+                <button
+                        type="submit"
+                        class="send-message"
+                        id="send"
+                        onclick="userResponse()"
+                >
+                    <i class="material-icons-outlined"> ارسال </i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+

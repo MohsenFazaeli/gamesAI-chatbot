@@ -1,0 +1,11 @@
+beautifulsoup4
+flask
+folium
+geopy
+numpy
+openpyxl
+pandas
+tensorflow
+torch
+transformers
+tqdm
